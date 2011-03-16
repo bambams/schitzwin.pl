@@ -1,0 +1,46 @@
+= schitzwin.pl =
+
+== What Is it? ==
+
+Just a very short irssi script based on hilightwin.pl (another irssi script)
+that logs your own messages (instead of hilighted messages) to a separate
+window, named "schitzo".
+
+See http://castopulence.org/schitzwin/ for more.
+
+== How Do I Use It? ==
+
+You use it like any other irssi script. "Install" (read: copy) it into
+your irssi scripts directory and execute the following command in irssi:
+
+/script load schitzwin.pl
+
+If you want the script to run automatically then symlink (or copy) it into
+the scripts/autorun directory (create if it doesn't exist yet).
+
+To actually see the output you will need to also create a window and name
+it "schitzo". I did this with the following commands:
+
+/window new split
+/window name schitzo
+/window size 2
+
+Whether or not you want to use a split or hidden window is entirely up to
+you. The script doesn't know or care. The name is really all that matters.
+The size is also arbitrary. I just didn't want it taking up more space
+than necessary.
+
+I also saved my layout so that every time I run irssi it will
+automatically create my schitzo window for me.
+
+/layout save
+/save
+
+(I'm not sure if the /save is necessary, but it shouldn't hurt unless you
+have settings you don't want saved)
+
+== License / Etc. ==
+
+The script is released under the terms of the GNU GPL version 2 or later.
+Be sure to familiarize yourself with the license. :)
+
